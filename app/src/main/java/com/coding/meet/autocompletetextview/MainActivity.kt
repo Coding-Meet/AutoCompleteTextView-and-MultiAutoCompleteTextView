@@ -54,14 +54,14 @@ class MainActivity : AppCompatActivity() {
         /// Custom TextView Layout with Auto Complete TextView
         val customAutoCompleteTextView = findViewById<AutoCompleteTextView>(R.id.customAutoCompleteTV)
         customAutoCompleteTextView.threshold = 1
-//        customAutoCompleteTextView.setAdapter(
-//            ArrayAdapter(
-//                this,
-//              R.layout.language_layout,
-//                R.id.languageTxt,
-//                languageList
-//            )
-//        )
+        customAutoCompleteTextView.setAdapter(
+            ArrayAdapter(
+                this,
+              R.layout.language_layout,
+                R.id.languageTxt,
+                languageList
+            )
+        )
         val customACTVBtn = findViewById<Button>(R.id.customACTVBtn)
         customACTVBtn.setOnClickListener {
             Toast.makeText(
